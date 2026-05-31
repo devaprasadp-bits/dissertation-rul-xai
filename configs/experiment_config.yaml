@@ -1,0 +1,41 @@
+# Experiment Configuration
+
+experiment:
+  name: "rul_xai_baseline"
+  seed: 42
+  output_dir: "reports/"
+
+data:
+  dataset: "CMAPSS"
+  subset: "FD001"          # FD001 | FD002 | FD003 | FD004
+  raw_path: "data/raw/"
+  processed_path: "data/processed/"
+  max_rul: 125             # RUL cap (piece-wise linear target)
+  test_size: 0.2
+  window_size: 30          # Sliding window length (time steps)
+
+features:
+  sensors_to_drop: [1, 5, 6, 10, 16, 18, 19]  # Low-variance sensors
+  normalize: true
+  normalization: "minmax"  # minmax | standard
+
+model:
+  type: "LSTM"             # LSTM | CNN | Transformer
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+  bidirectional: false
+
+training:
+  epochs: 50
+  batch_size: 64
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss: "rmse"             # rmse | huber
+  early_stopping_patience: 10
+  scheduler: "cosine"
+
+explainability:
+  methods: ["shap", "lime", "integrated_gradients"]
+  num_background_samples: 100
+  num_lime_samples: 500

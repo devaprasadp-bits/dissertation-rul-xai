@@ -1,4 +1,4 @@
-# Dissertation: Remaining Useful Life (RUL) Prediction with Explainable AI (XAI)
+# Dissertation: Explainable and Trustworthy Multimodal Deep Learning for Predictive Maintenance of Industrial Assets
 
 ## Overview
 
@@ -56,4 +56,4 @@ pip install -r requirements.txt
 
 ## Author
 
-BITS Pilani – Final Semester Dissertation, 2026
+M Tech (WILP) – BITS Pilani, 2026

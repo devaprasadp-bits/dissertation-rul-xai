@@ -32,8 +32,8 @@ data/processed/*
 *.pth
 *.ckpt
 
-# Classical model files (too large for GitHub)
-models/classical/
+# RandomForest models too large for GitHub (83-93MB each)
+models/classical/RandomForest_*.joblib
 
 # Local session and notes
 .claude/

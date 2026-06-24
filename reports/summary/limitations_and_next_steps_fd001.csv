@@ -1,0 +1,7 @@
+limitation,mitigation_or_next_step
+Experiments are currently limited to C-MAPSS FD001.,Extend to FD002/FD004 or other datasets in final phase if time permits.
+"Multimodality is operationalized as benchmark-driven multi-view learning, not full native multimodality with image/text/audio.",Clearly document this scope boundary in the report.
+Results are based on one validation split.,Repeated runs or additional split validation can be considered in final phase.
+Neural-network explainability is limited to view masking at this stage.,Integrated Gradients or gradient-based explanations may be considered later.
+MC Dropout uncertainty is not calibrated.,Treat as an initial uncertainty signal only.
+Production deployment and real-time integration are outside current scope.,Position work as benchmark-based applied research prototype.

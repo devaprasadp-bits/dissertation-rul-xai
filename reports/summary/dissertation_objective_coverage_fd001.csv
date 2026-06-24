@@ -1,0 +1,7 @@
+dissertation_component,evidence_generated,status
+Predictive maintenance,RUL prediction on NASA C-MAPSS FD001 using engine degradation trajectories,Covered
+Deep learning,"CNN1D, GRU, DerivedOnlyMLP, and MultiViewGRUFusion models trained",Covered
+Multimodal / multi-view learning,Sensor sequence view and derived degradation feature view fused in MultiViewGRUFusion,Covered as benchmark-driven multi-view learning
+Explainability,"XGBoost feature importance, SHAP analysis, view masking, and local case analysis",Initial coverage complete
+Trustworthiness,"Noise robustness, random masking, missing-view, RUL-range, bias, stability, and MC Dropout checks",Initial model-level coverage complete
+Industrial assets,C-MAPSS turbofan engine degradation benchmark used as industrial asset proxy,Covered within benchmark scope

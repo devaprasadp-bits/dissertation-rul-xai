@@ -1,0 +1,3 @@
+model,views_used,window_size,validation_rmse,validation_mae,validation_r2
+MultiViewGRUFusion,sensor_sequence_view + derived_degradation_view,30,12.0657,8.9406,0.9168
+DerivedOnlyMLP,derived_degradation_view,30,13.1451,9.4204,0.9013

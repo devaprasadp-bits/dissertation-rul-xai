@@ -1,0 +1,2 @@
+current_best_model,model_group,input_representation,validation_rmse,validation_mae,validation_r2,comparison_basis,status
+MultiViewGRUFusion,Multi-view Deep Learning,sensor_sequence_view + derived_degradation_view,12.0657,8.9406,0.9168,window-aligned validation rows,current best validation result

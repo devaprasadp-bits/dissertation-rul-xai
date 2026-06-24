@@ -1,0 +1,16 @@
+repeat,perturbation_type,noise_std,rmse,mae,r2,mean_error,median_error
+0,sensor_sequence_noise,0.1,12.0864,8.9483,0.9165,-2.2949,-1.7231
+1,sensor_sequence_noise,0.1,12.0782,8.931,0.9167,-2.3005,-1.728
+2,sensor_sequence_noise,0.1,12.0633,8.9313,0.9169,-2.2926,-1.7609
+3,sensor_sequence_noise,0.1,12.0838,8.9511,0.9166,-2.2838,-1.7335
+4,sensor_sequence_noise,0.1,12.0828,8.9527,0.9166,-2.2906,-1.7575
+0,derived_feature_noise,0.1,12.1701,9.0166,0.9154,-2.113,-1.6023
+1,derived_feature_noise,0.1,12.1866,8.9833,0.9151,-2.1357,-1.5079
+2,derived_feature_noise,0.1,12.1155,8.9168,0.9161,-2.1087,-1.4037
+3,derived_feature_noise,0.1,12.1574,8.9806,0.9156,-2.1021,-1.4966
+4,derived_feature_noise,0.1,12.1709,8.9904,0.9154,-2.1262,-1.5342
+0,combined_noise,0.1,12.1968,8.9821,0.915,-2.132,-1.5817
+1,combined_noise,0.1,12.2174,8.9996,0.9147,-2.1672,-1.444
+2,combined_noise,0.1,12.2282,9.0104,0.9146,-2.1491,-1.4587
+3,combined_noise,0.1,12.1988,8.9839,0.915,-2.1091,-1.4236
+4,combined_noise,0.1,12.2802,9.0537,0.9138,-2.1491,-1.5827

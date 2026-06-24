@@ -1,0 +1,6 @@
+explainability_check,main_finding
+XGBoost native feature importance,Rolling mean degradation features dominate model importance
+SHAP global summary,"sensor_measurement_4_rmean, sensor_measurement_11_rmean, and cycle_index are top contributors"
+SHAP dependence plots,Top features show directional contribution patterns to predicted RUL
+View masking,Derived degradation view is the dominant driver; sensor sequence view adds complementary signal
+Local case analysis,"Representative good, under-predicted, and over-predicted cases were inspected, including a mid-range good prediction"

@@ -32,6 +32,13 @@ data/processed/*
 *.pth
 *.ckpt
 
+# Classical model files (too large for GitHub)
+models/classical/
+
+# Local session and notes
+.claude/
+internal-notes/
+
 # MLflow
 mlruns/
 

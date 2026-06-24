@@ -1,0 +1,2 @@
+condition,mean_error,median_error,under_prediction_rate,over_prediction_rate,within_5_cycles_rate,within_10_cycles_rate,within_20_cycles_rate
+baseline,-2.2779,-1.7065,0.5648,0.4002,0.4002,0.6432,0.9046

@@ -1,0 +1,16 @@
+feature_set,model,validation_rmse,validation_mae,validation_r2
+C,XGBoost,11.7218,8.3182,0.9203
+C,GradientBoosting,12.3679,8.9915,0.9113
+C,RandomForest,12.8244,8.9635,0.9046
+C,Ridge,15.7721,12.0374,0.8557
+A,GradientBoosting,19.3663,13.6373,0.7824
+B,GradientBoosting,19.3805,13.6408,0.7821
+A,XGBoost,19.4698,13.6383,0.7801
+B,XGBoost,19.4861,13.6315,0.7797
+A,RandomForest,19.6004,14.0208,0.7771
+B,RandomForest,19.6213,14.0126,0.7766
+A,Ridge,20.6232,16.0358,0.7533
+B,Ridge,20.6352,16.0547,0.753
+A,DummyMean,41.559,37.0843,-0.002
+B,DummyMean,41.559,37.0843,-0.002
+C,DummyMean,41.559,37.0843,-0.002

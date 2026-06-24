@@ -1,0 +1,4 @@
+condition,description,rmse,mae,r2
+both_views_available,Sensor sequence view + derived degradation view,12.0657,8.9406,0.9168
+sensor_sequence_masked,Derived degradation view only at inference,15.5505,12.6154,0.8618
+derived_view_masked,Sensor sequence view only at inference,42.5692,36.1661,-0.0354

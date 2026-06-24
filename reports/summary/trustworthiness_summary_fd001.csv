@@ -1,0 +1,9 @@
+check,main_finding
+Sensor sequence noise,Model performance remained stable under sensor sequence noise (RMSE +0.31% at noise_std=0.20)
+Derived feature perturbation,Model was more sensitive to derived feature perturbation than sensor sequence perturbation
+Random masking,Derived feature masking caused larger degradation than sensor sequence masking
+Missing view,"Full derived-view masking caused severe performance collapse (RMSE 42.57, R2 -0.04)"
+RUL range-wise error,Near-failure predictions most accurate (RMSE 4.43); early/capped range showed higher error and under-prediction
+Prediction bias,Model showed slight overall under-prediction tendency; 90.5% of predictions within 20 cycles
+Repeated perturbation stability,Low RMSE variation across random seeds (std 0.009–0.034 at noise_std=0.1)
+MC Dropout uncertainty,Prediction uncertainty showed moderate alignment with absolute error (correlation 0.49)

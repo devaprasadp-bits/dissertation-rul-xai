@@ -1,0 +1,4 @@
+rul_range,sample_count,rmse,mae,r2,mean_error,median_error
+near_failure_0_30,620,4.4301,3.3147,0.7547,2.2078,1.916
+mid_degradation_31_80,1000,12.0633,8.9563,0.3012,4.2369,3.1233
+early_or_capped_81_125,2091,13.5262,10.6011,0.0443,-6.7235,-7.0594

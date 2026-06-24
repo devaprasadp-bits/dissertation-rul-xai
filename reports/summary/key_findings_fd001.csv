@@ -1,0 +1,9 @@
+finding_no,finding
+1,Derived degradation features substantially improved RUL prediction compared with raw sensor features.
+2,GRU performed better than CNN1D for sequence-based RUL prediction on selected sensor windows.
+3,The initial MultiViewGRUFusion model achieved the best validation result by combining sensor sequence and derived degradation views.
+4,Explainability analysis showed that rolling mean degradation features were dominant contributors in the XGBoost baseline.
+5,"View masking showed that the derived degradation view was the dominant contributor in the fusion model, while the sensor sequence view added complementary signal."
+6,Robustness checks showed stronger sensitivity to derived feature perturbation than to raw sensor sequence perturbation.
+7,Near-failure RUL predictions were more accurate than early/capped-region predictions.
+8,"MC Dropout uncertainty showed moderate alignment with absolute prediction error, providing an initial uncertainty signal."

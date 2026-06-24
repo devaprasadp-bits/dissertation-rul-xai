@@ -1,0 +1,11 @@
+figure_file,report_section,why_selected
+feature_correlation_ranking_fd001.png,EDA,Shows sensor association with RUL
+sensor_trends_selected_fd001.png,EDA,Shows degradation trends over engine lifecycle
+classical_vs_deep_rmse_comparison_fd001.png,Baseline comparison,Compares classical and deep learning baselines on window-aligned set
+multiview_vs_baselines_rmse_fd001.png,Multi-view model results,Shows MultiViewGRUFusion compared with all baselines
+actual_vs_predicted_multiview_fd001.png,Multi-view model results,Shows prediction quality of the best model
+shap_summary_xgboost_fd001.png,Explainability,Shows global SHAP explanation for XGBoost baseline
+multiview_view_masking_rmse_fd001.png,Explainability,Shows relative importance of input views via masking
+robustness_summary_rmse_multiview_fd001.png,Robustness,Summarizes noise and masking robustness across conditions
+rul_range_error_multiview_fd001.png,Robustness,Shows lifecycle-region-wise prediction error
+uncertainty_vs_error_multiview_fd001.png,Trustworthiness,Shows MC Dropout uncertainty relation with absolute error

@@ -1,0 +1,10 @@
+condition,perturbation_type,rmse,mae,r2,rmse_increase_pct
+baseline,none,12.0657,8.9406,0.9168,0.0
+sensor_sequence_noise_0.2,sensor_sequence_noise,12.1026,8.9582,0.9163,0.31
+derived_feature_noise_0.2,derived_feature_noise,12.5102,9.211,0.9106,3.68
+sensor_sequence_random_mask_0.3,sensor_sequence_random_masking,12.5428,9.7108,0.9101,3.95
+combined_noise_0.2,combined_noise,12.5906,9.1948,0.9094,4.35
+sensor_sequence_masked,view_masking,15.5505,12.6154,0.8618,28.88
+derived_feature_random_mask_0.3,derived_feature_random_masking,17.7557,14.4966,0.8199,47.16
+combined_random_mask_0.3,combined_random_masking,19.0455,15.8509,0.7928,57.85
+derived_view_masked,view_masking,42.5692,36.1661,-0.0354,252.81

@@ -1,0 +1,6 @@
+model_group,model,feature_or_views,validation_rmse,validation_mae,validation_r2
+Multi-view Deep Learning,MultiViewGRUFusion,sensor_sequence_view + derived_degradation_view,12.0657,8.9406,0.9168
+Classical,XGBoost,C,12.4894,9.2675,0.9109
+Multi-view Deep Learning,DerivedOnlyMLP,derived_degradation_view,13.1451,9.4204,0.9013
+Deep Learning,GRU,B (window=30),13.1605,9.7182,0.901
+Deep Learning,CNN1D,B (window=30),18.1509,14.0382,0.8118

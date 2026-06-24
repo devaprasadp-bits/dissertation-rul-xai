@@ -1,0 +1,9 @@
+step,title,main_output
+Step 1,Dataset Understanding and Problem Formulation,"FD001 loaded, RUL regression formulated, leakage risks documented"
+Step 2,EDA and Feature Selection,"Variable sensors identified, feature decision table and EDA plots generated"
+Step 3,Baseline-ready Preprocessing,"RUL capping, engine-level split, scaling, Feature Sets A/B/C created"
+Step 4,Classical Baselines,"XGBoost/C established as strongest classical baseline (RMSE 12.49, window-aligned)"
+Step 5,Deep Learning Baselines,"CNN1D and GRU trained; GRU became best deep baseline (RMSE 13.16, window-aligned)"
+Step 6,Initial Multi-view Model,MultiViewGRUFusion trained; achieved RMSE 12.07 on window-aligned validation
+Step 7,Initial Explainability,"Feature importance, SHAP, view masking, and local case analysis completed"
+Step 8,Initial Robustness and Trustworthiness,"Noise, masking, RUL-range, bias, stability, and MC Dropout checks completed"

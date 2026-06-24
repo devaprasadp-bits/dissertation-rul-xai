@@ -1,0 +1,4 @@
+model,feature_set,model_type,comparison_basis,validation_rmse,validation_mae,validation_r2
+XGBoost,C,Classical,window-aligned validation rows,12.4894,9.2675,0.9109
+GRU,B (window=30),Deep Learning,windowed validation rows,13.1605,9.7182,0.901
+CNN1D,B (window=30),Deep Learning,windowed validation rows,18.1509,14.0382,0.8118

@@ -56,4 +56,4 @@ pip install -r requirements.txt
 
 ## Author
 
-M Tech (WILP) – BITS Pilani, 2026
+Devaprasad P, M Tech (WILP) – BITS Pilani, 2026

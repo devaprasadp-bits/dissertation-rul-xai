@@ -255,7 +255,7 @@
 
 ### 4.6 Window Construction
 
-[DRAFT — 30-cycle sliding windows; stride=1; engines shorter than 30 cycles excluded]
+[DRAFT — Sliding windows of 30 cycles were generated independently within each engine. A prediction sample was created only where a complete 30-cycle history was available. For the official FD001 endpoint test evaluation, all test engines were verified to contain at least 30 observed cycles before evaluation.]
 
 ### 4.7 Model Architectures
 

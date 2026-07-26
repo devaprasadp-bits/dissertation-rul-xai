@@ -30,6 +30,10 @@
 - The plan is to clarify this in the abstract and Chapter 1 without changing the title
 - **Action needed:** Please confirm whether this handling is acceptable, or whether a title revision should be proposed to BITS
 
+### 5. Additional Examiner coordination
+- The Mentor Evaluation Form includes fields for both the Supervisor and Additional Examiner (identity, designation, contact details, and signature-related information)
+- **Action needed:** Please advise whether the Additional Examiner's details and signature need to be coordinated separately, or whether this will be handled through the BITS evaluation process
+
 ---
 
 ## Factual metadata for forms (to be confirmed)

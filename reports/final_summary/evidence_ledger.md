@@ -18,7 +18,7 @@
 | E01c | GRU/B RMSE 13.1605, MAE 9.7182, R² 0.9010 | NB05 | `reports/metrics/deep_learning_baseline_results_fd001.csv` | §6.1 | Verified |
 | E01d | DerivedOnlyMLP RMSE 13.1451, MAE 9.4204, R² 0.9013 | NB06 | `reports/metrics/multiview_deep_learning_results_fd001.csv` | §6.1 | Verified |
 | E01e | CNN1D/B RMSE 18.1509, MAE 14.0382, R² 0.8118 | NB05 | `reports/metrics/deep_learning_baseline_results_fd001.csv` | §6.1 | Verified |
-| E01f | XGBoost/C full-val (pre-alignment) RMSE 12.4894 (window rows same here) | NB04 | `reports/metrics/classical_baseline_results_fd001.csv` | §6.1 note | Check |
+| E01f | XGBoost/C **full-validation** RMSE 11.7218, MAE 8.3182, R² 0.9203 — evaluated on all validation rows (not window-aligned; different sample population from E01b) | NB04 | `reports/metrics/classical_baseline_results_fd001.csv` | §6.1 note | Verified |
 | E02 | RMSE comparison bar chart (multi-view vs baselines) | NB06 | `reports/figures/multiview_vs_baselines_rmse_fd001.png` | §6.1 | Verified |
 | E03 | Actual vs predicted scatter — MultiViewGRUFusion | NB06 | `reports/figures/actual_vs_predicted_multiview_fd001.png` | §6.1 | Verified |
 | E04 | Sample engine prediction trajectories — MultiViewGRUFusion | NB06 | `reports/figures/sample_engine_prediction_trajectories_multiview_fd001.png` | §6.1 | Verified |
@@ -123,11 +123,11 @@
 
 | Source | Verified | Pending | Check | Total |
 |---|---|---|---|---|
-| NB01–09 (mid-semester) | 42 | 0 | 1 | 43 |
+| NB01–09 (mid-semester) | 43 | 0 | 0 | 43 |
 | NB10 (repeated validation) | 0 | 5 | 0 | 5 |
 | NB11 (test evaluation) | 0 | 3 | 0 | 3 |
 | NB12 (consolidation) | 0 | 4 | 0 | 4 |
-| **Total** | **42** | **12** | **1** | **55** |
+| **Total** | **43** | **12** | **0** | **55** |
 
 **12 evidence items pending** — all from NB10, NB11, NB12. No mid-semester evidence is missing.
 

@@ -14,26 +14,25 @@ dissertation-rul-xai/
 │   ├── interim/           # Intermediate transformed data
 │   └── processed/         # Final datasets ready for modelling
 │
-├── notebooks/
-│   ├── 01_dataset_understanding.ipynb
-│   ├── 02_rul_label_preparation.ipynb
-│   └── 03_baseline_model.ipynb
+├── notebooks/             # See notebook index below
 │
-├── src/
-│   ├── data_preparation/  # Scripts for loading and preprocessing
-│   ├── features/          # Feature engineering
-│   ├── models/            # Model definitions and training
-│   ├── evaluation/        # Metrics and evaluation utilities
-│   └── explainability/    # SHAP, LIME, and other XAI methods
+├── models/                # Saved model artefacts
 │
 ├── reports/
 │   ├── figures/           # Generated plots and visualisations
-│   ├── tables/            # Result tables
-│   └── progress_log.md    # Weekly progress notes
+│   ├── metrics/           # Evaluation result CSVs
+│   ├── predictions/       # Per-sample prediction CSVs
+│   ├── summary/           # Mid-semester consolidated outputs
+│   ├── final_validation/  # Final-phase repeated validation outputs
+│   ├── final_test/        # Final-phase test evaluation outputs
+│   └── final_summary/     # Final evidence pack and ledger
+│
+├── submission/            # BITS submission artefacts
 │
 ├── configs/
-│   └── experiment_config.yaml   # Hyperparameters and experiment settings
+│   └── experiment_config.yaml
 │
+├── internal-notes/        # Working notes and plans
 ├── README.md
 └── requirements.txt
 ```

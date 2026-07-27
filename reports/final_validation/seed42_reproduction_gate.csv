@@ -9,6 +9,7 @@ Engine assignment,match,match,PASS
 Val arrays numerical match,allclose,allclose,PASS
 Train arrays numerical match,allclose,allclose,PASS
 Val metadata and order,exact match,exact match,PASS
+Train metadata and order,exact match,exact match,PASS
 Fusion RMSE,12.0657,12.0657,PASS
 Fusion MAE,8.9406,8.9406,PASS
 Fusion R²,0.9168,0.9168,PASS

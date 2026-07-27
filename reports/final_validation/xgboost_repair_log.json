@@ -1,0 +1,21 @@
+{
+  "repaired_at": "2026-07-27T15:01:35.487251+00:00",
+  "seeds_repaired": [
+    {
+      "split_seed": 21,
+      "macro_engine_rmse": 13.457154,
+      "mean_error": 0.158539
+    },
+    {
+      "split_seed": 84,
+      "macro_engine_rmse": 15.48994,
+      "mean_error": -3.218278
+    }
+  ],
+  "fields_recalculated": [
+    "macro_engine_rmse",
+    "mean_error"
+  ],
+  "source": "predictions_XGBoost.csv per split",
+  "model_retrained": false
+}

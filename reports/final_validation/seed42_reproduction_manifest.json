@@ -1,5 +1,5 @@
 {
-  "gate_run_at": "2026-07-26T15:18:42.121609+00:00",
+  "gate_run_at": "2026-07-27T15:01:34.440872+00:00",
   "reference_split_seed": 42,
   "model_seed": 42,
   "metric_tolerance": 0.005,
@@ -118,6 +118,12 @@
     },
     {
       "Check": "Val metadata and order",
+      "Expected": "exact match",
+      "Reproduced": "exact match",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Train metadata and order",
       "Expected": "exact match",
       "Reproduced": "exact match",
       "Status": "PASS"

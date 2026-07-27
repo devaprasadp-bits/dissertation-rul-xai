@@ -1,0 +1,44 @@
+{
+  "split_seed": 84,
+  "model_seed": 42,
+  "completed_at": "2026-07-27T00:42:53.868876+00:00",
+  "n_train_engines": 80,
+  "n_val_engines": 20,
+  "n_train_windows": 13983,
+  "n_val_windows": 3748,
+  "derived_col_count": 43,
+  "results": {
+    "XGBoost": {
+      "rmse": 16.642147,
+      "mae": 12.203245,
+      "r2": 0.842111,
+      "best_epoch": null,
+      "macro_engine_rmse": 15.48994,
+      "mean_error": -3.218278
+    },
+    "GRU": {
+      "rmse": 14.868404,
+      "mae": 11.532914,
+      "r2": 0.873973,
+      "best_epoch": 26,
+      "macro_engine_rmse": 14.608336,
+      "mean_error": -2.979907
+    },
+    "DerivedOnlyMLP": {
+      "rmse": 15.235867,
+      "mae": 11.072456,
+      "r2": 0.867667,
+      "best_epoch": 59,
+      "macro_engine_rmse": 14.436115,
+      "mean_error": -1.302489
+    },
+    "MultiViewGRUFusion": {
+      "rmse": 15.759872,
+      "mae": 12.171148,
+      "r2": 0.858408,
+      "best_epoch": 12,
+      "macro_engine_rmse": 14.790894,
+      "mean_error": -5.196121
+    }
+  }
+}

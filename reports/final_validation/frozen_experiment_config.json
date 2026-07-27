@@ -1,0 +1,105 @@
+{
+  "SPLIT_SEEDS": [
+    21,
+    42,
+    84
+  ],
+  "REFERENCE_SPLIT_SEED": 42,
+  "MODEL_SEED": 42,
+  "RUL_CAP": 125,
+  "WINDOW_SIZE": 30,
+  "ROLLING_WIN": 5,
+  "STRIDE": 1,
+  "N_TRAIN_ENG": 80,
+  "N_VAL_ENG": 20,
+  "SENSOR_COLS": [
+    "sensor_measurement_11",
+    "sensor_measurement_4",
+    "sensor_measurement_12",
+    "sensor_measurement_7",
+    "sensor_measurement_15",
+    "sensor_measurement_21",
+    "sensor_measurement_20",
+    "sensor_measurement_2",
+    "sensor_measurement_17",
+    "sensor_measurement_3",
+    "sensor_measurement_8",
+    "sensor_measurement_13",
+    "sensor_measurement_9",
+    "sensor_measurement_14"
+  ],
+  "prediction_clipping": [
+    0,
+    125
+  ],
+  "XGB_PARAMS": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "reg:squarederror",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "GRU": {
+    "max_epochs": 30,
+    "batch": 256,
+    "es_patience": 10,
+    "lr_patience": 5,
+    "lr": 0.001,
+    "lr_factor": 0.5,
+    "min_lr": 1e-06,
+    "dropout": 0.2,
+    "architecture": "GRU(64,seq=True)->GRU(32)->Dense(50,relu)->Dropout(0.2)->Dense(1)",
+    "optimiser": "Adam",
+    "loss": "mse"
+  },
+  "MLP": {
+    "max_epochs": 60,
+    "batch": 128,
+    "es_patience": 8,
+    "lr_patience": 4,
+    "min_lr": 1e-05,
+    "lr": 0.001,
+    "lr_factor": 0.5,
+    "dropout": 0.2,
+    "DerivedOnlyMLP_architecture": "Dense(64,relu)->Dropout(0.2)->Dense(32,relu)->Dense(1)",
+    "MultiViewGRUFusion_seq_branch": "GRU(64)->Dropout(0.2)",
+    "MultiViewGRUFusion_der_branch": "Dense(64,relu)->Dropout(0.2)->Dense(32,relu)",
+    "MultiViewGRUFusion_fusion": "Concat->Dense(64,relu)->Dropout(0.2)->Dense(32,relu)->Dense(1)",
+    "optimiser": "Adam",
+    "loss": "mse"
+  },
+  "REF_BEST_EPOCH": {
+    "GRU": 22,
+    "DerivedOnlyMLP": 60,
+    "MultiViewGRUFusion": 18
+  },
+  "REF_METRICS": {
+    "MultiViewGRUFusion": {
+      "rmse": 12.0657,
+      "mae": 8.9406,
+      "r2": 0.9168
+    },
+    "XGBoost": {
+      "rmse": 12.4894,
+      "mae": 9.2675,
+      "r2": 0.9109
+    },
+    "DerivedOnlyMLP": {
+      "rmse": 13.1451,
+      "mae": 9.4204,
+      "r2": 0.9013
+    },
+    "GRU": {
+      "rmse": 13.1605,
+      "mae": 9.7182,
+      "r2": 0.901
+    }
+  },
+  "METRIC_TOLERANCE": 0.005,
+  "derived_feature_pattern": "{sensor}_rmean, {sensor}_rstd, {sensor}_delta (\u00d714 sensors) + cycle_index",
+  "OVERWRITE_EXISTING": false,
+  "RUN_CYCLE_INDEX_ABLATION": true
+}

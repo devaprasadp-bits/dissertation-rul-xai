@@ -1,0 +1,23 @@
+Check,Expected,Reproduced,Status
+Training engines,80,80,PASS
+Validation engines,20,20,PASS
+Training windows,14020,14020,PASS
+Validation windows,3711,3711,PASS
+Seq shape (per sample),"(30, 14)","(30, 14)",PASS
+Derived feature count,43,43,PASS
+Engine assignment,match,match,PASS
+Val arrays numerical match,allclose,allclose,PASS
+Train arrays numerical match,allclose,allclose,PASS
+Val metadata and order,exact match,exact match,PASS
+Fusion RMSE,12.0657,12.0657,PASS
+Fusion MAE,8.9406,8.9406,PASS
+Fusion R²,0.9168,0.9168,PASS
+XGBoost aligned RMSE,12.4894,12.4894,PASS
+XGBoost aligned MAE,9.2675,9.2675,PASS
+XGBoost aligned R²,0.9109,0.9109,PASS
+DerivedOnlyMLP RMSE,13.1451,13.1451,PASS
+DerivedOnlyMLP MAE,9.4204,9.4204,PASS
+DerivedOnlyMLP R²,0.9013,0.9013,PASS
+GRU RMSE,13.1605,13.1605,PASS
+GRU MAE,9.7182,9.7182,PASS
+GRU R²,0.901,0.901,PASS

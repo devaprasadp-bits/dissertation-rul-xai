@@ -4,7 +4,7 @@
 
 **Rule:** Every headline number and figure in the final report must map to a saved output artefact via an entry in this ledger.
 
-**Status values:** `Verified` = artefact exists and value confirmed | `Pending` = NB10/NB11 not yet run | `Check` = artefact exists but path/value needs confirmation before writing to report
+**Status values:** `Verified` = artefact exists and value confirmed | `Pending` = planned evidence whose source notebook or artefact has not yet been completed and verified. | `Check` = artefact exists but path/value needs confirmation before writing to report
 
 ---
 

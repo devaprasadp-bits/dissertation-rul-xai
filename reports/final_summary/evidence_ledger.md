@@ -22,11 +22,12 @@
 | E02 | RMSE comparison bar chart (multi-view vs baselines) | NB06 | `reports/figures/multiview_vs_baselines_rmse_fd001.png` | §6.1 | Verified |
 | E03 | Actual vs predicted scatter — MultiViewGRUFusion | NB06 | `reports/figures/actual_vs_predicted_multiview_fd001.png` | §6.1 | Verified |
 | E04 | Sample engine prediction trajectories — MultiViewGRUFusion | NB06 | `reports/figures/sample_engine_prediction_trajectories_multiview_fd001.png` | §6.1 | Verified |
-| E05 | Repeated-validation split results (3 seeds × 4 models) | NB10 | `reports/final_validation/repeated_validation_split_metrics_fd001.csv` | §6.2, Table F3 | **PENDING** |
-| E06 | Repeated-validation mean ± std summary | NB10 | `reports/final_validation/repeated_validation_summary_fd001.csv` | §6.2, Table F4 | **PENDING** |
-| E07 | Fusion pairwise comparison per split | NB10 | `reports/final_validation/repeated_validation_pairwise_comparison_fd001.csv` | §6.2, Table F5 | **PENDING** |
-| E08 | Per-engine validation metrics | NB10 | `reports/final_validation/per_engine_validation_metrics_fd001.csv` | §6.3, Table F7 | **PENDING** |
-| E09 | cycle_index ablation table | NB10 | `reports/final_validation/cycle_index_ablation_fd001.csv` | §6.4, Table F6 | **PENDING** |
+| E05 | Repeated-validation split results (3 seeds × 4 models) | NB10 | `reports/final_validation/repeated_validation_split_metrics_fd001.csv` | §6.2, Table F3 | Verified |
+| E06 | Repeated-validation mean ± std summary | NB10 | `reports/final_validation/repeated_validation_summary_fd001.csv` | §6.2, Table F4 | Verified |
+| E07 | Fusion pairwise RMSE differences per split | NB10 | `reports/final_validation/repeated_validation_pairwise_comparison_fd001.csv` | §6.2, Table F5 | Verified |
+| E07a | Fusion percentage comparisons and win counts | NB10 | `reports/final_validation/repeated_validation_fusion_comparison_fd001.csv` | §6.2, Table F5 | Verified |
+| E08 | Per-engine validation metrics | NB10 | `reports/final_validation/per_engine_validation_metrics_fd001.csv` | §6.3, Table F7 | Verified |
+| E09 | cycle_index ablation table | NB10 | `reports/final_validation/cycle_index_ablation_fd001.csv` | §6.4, Table F6 | Verified |
 | E10 | Official test endpoint metrics (all models) | NB11 | `reports/final_test/final_test_endpoint_metrics_fd001.csv` | §6.5, Table F8 | **PENDING** |
 | E11 | Official test endpoint predictions | NB11 | `reports/final_test/final_test_endpoint_predictions_fd001.csv` | §6.5 | **PENDING** |
 | E12 | Final epoch selection table | NB11 | `reports/final_test/final_epoch_selection_fd001.csv` | §5.7 | **PENDING** |
@@ -90,7 +91,7 @@
 | E42 | CNN1D training curve | NB05 | `reports/figures/training_curve_CNN1D_fd001.png` | Appendix D | Verified |
 | E43 | DerivedOnlyMLP training curve | NB06 | `reports/figures/training_curve_DerivedOnlyMLP_fd001.png` | Appendix D | Verified |
 | E44 | MultiViewGRUFusion training curve | NB06 | `reports/figures/training_curve_MultiViewGRUFusion_fd001.png` | Appendix D | Verified |
-| E45 | Training curves per seed (NB10) | NB10 | `reports/final_validation/split_seed_XX/training_history_*.csv` | Appendix D | **PENDING** |
+| E45 | Training curves per seed (NB10) | NB10 | `reports/final_validation/split_seed_XX/training_history_*.csv` | Appendix D | Verified |
 
 ---
 
@@ -124,33 +125,32 @@
 | Source | Verified | Pending | Check | Total |
 |---|---|---|---|---|
 | NB01–09 (mid-semester) | 43 | 0 | 0 | 43 |
-| NB10 (repeated validation) | 0 | 5 | 0 | 5 |
+| NB10 (repeated validation) | 7 | 0 | 0 | 7 |
 | NB11 (test evaluation) | 0 | 3 | 0 | 3 |
 | NB12 (consolidation) | 0 | 4 | 0 | 4 |
-| **Total** | **43** | **12** | **0** | **55** |
+| **Total** | **50** | **7** | **0** | **57** |
 
-**12 evidence items pending** — all from NB10, NB11, NB12. No mid-semester evidence is missing.
+**7 evidence items pending** — all from NB11 and NB12. All NB10 evidence verified.
 
 ---
 
 ## Pending artefact checklist (update as NB10/NB11/NB12 complete)
 
-- [ ] E05 — Repeated-validation split metrics (NB10)
-- [ ] E06 — Repeated-validation summary mean ± std (NB10)
-- [ ] E07 — Fusion pairwise comparison (NB10)
-- [ ] E08 — Per-engine validation metrics (NB10)
-- [ ] E09 — cycle_index ablation (NB10)
+- [x] E05 — Repeated-validation split metrics (NB10)
+- [x] E06 — Repeated-validation summary mean ± std (NB10)
+- [x] E07 — Fusion pairwise comparison (NB10)
+- [x] E07a — Fusion percentage comparisons and win counts (NB10)
+- [x] E08 — Per-engine validation metrics (NB10)
+- [x] E09 — cycle_index ablation (NB10)
+- [x] E45 — Training histories per seed (NB10)
+
 - [ ] E10 — Official test endpoint metrics (NB11)
 - [ ] E11 — Official test predictions (NB11)
 - [ ] E12 — Final epoch selection (NB11)
-- [ ] E45 — Training histories per seed (NB10)
 - [ ] E53 — Final model comparison (NB12)
 - [ ] E54 — Research question evidence (NB12)
 - [ ] E55–E56 — Limitations and claims tables (NB12)
 
-**Check item:**
-- [ ] E01f — Confirm XGBoost/C full-val RMSE from NB04; note that window-aligned (E01b) is the correct comparison basis
-
 ---
 
-*Ledger created: 2026-07-26 | Update after each notebook completes*
+*Ledger created: 2026-07-26 | NB10 verified: 2026-07-28 | Update after each notebook completes*

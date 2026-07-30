@@ -144,9 +144,9 @@
 - [x] E09 — cycle_index ablation (NB10)
 - [x] E45 — Training histories per seed (NB10)
 
-- [ ] E10 — Official test endpoint metrics (NB11)
-- [ ] E11 — Official test predictions (NB11)
-- [ ] E12 — Final epoch selection (NB11)
+- [x] E10 — Official test endpoint metrics (NB11)
+- [x] E11 — Official test predictions (NB11)
+- [x] E12 — Final epoch selection (NB11)
 - [ ] E53 — Final model comparison (NB12)
 - [ ] E54 — Research question evidence (NB12)
 - [ ] E55–E56 — Limitations and claims tables (NB12)

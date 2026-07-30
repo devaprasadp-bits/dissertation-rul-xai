@@ -113,10 +113,10 @@
 
 | Evidence ID | Result / Figure | Source notebook | Source file | Report section | Status |
 |---|---|---|---|---|---|
-| E53 | Final model comparison table | NB12 | `reports/final_summary/final_model_comparison_fd001.csv` | §6.1, §6.5 | **PENDING** |
-| E54 | Research question evidence table | NB12 | `reports/final_summary/research_question_evidence_fd001.csv` | §8.1–8.4 | **PENDING** |
-| E55 | Final limitations table | NB12 | `reports/final_summary/final_limitations_fd001.csv` | §9.5 | **PENDING** |
-| E56 | Final claims and qualifications | NB12 | `reports/final_summary/final_claims_and_qualifications_fd001.csv` | §8 | **PENDING** |
+| E53 | Final model comparison table | NB12 | `reports/final_summary/final_model_comparison_fd001.csv` | §6.1, §6.5 | Verified |
+| E54 | Research question evidence table | NB12 | `reports/final_summary/research_question_evidence_fd001.csv` | §8.1–8.4 | Verified |
+| E55 | Final limitations table | NB12 | `reports/final_summary/final_limitations_fd001.csv` | §9.5 | Verified |
+| E56 | Final claims and qualifications | NB12 | `reports/final_summary/final_claims_and_qualifications_fd001.csv` | §8 | Verified |
 
 ---
 
@@ -127,10 +127,10 @@
 | NB01–09 (mid-semester) | 43 | 0 | 0 | 43 |
 | NB10 (repeated validation) | 7 | 0 | 0 | 7 |
 | NB11 (test evaluation) | 3 | 0 | 0 | 3 |
-| NB12 (consolidation) | 0 | 4 | 0 | 4 |
-| **Total** | **53** | **4** | **0** | **57** |
+| NB12 (consolidation) | 4 | 0 | 0 | 4 |
+| **Total** | **57** | **0** | **0** | **57** |
 
-**4 evidence items pending** — all from NB12. All NB10 and NB11 evidence verified.
+**All 57 evidence items verified.**
 
 ---
 
@@ -153,4 +153,4 @@
 
 ---
 
-*Ledger created: 2026-07-26 | NB10 verified: 2026-07-28 | NB11 verified: 2026-07-30 | Update after each notebook completes*
+*Ledger created: 2026-07-26 | NB10 verified: 2026-07-28 | NB11 verified: 2026-07-30 | NB12 verified: 2026-07-30 | All 57 items complete*

@@ -1,0 +1,210 @@
+{
+  "notebook": "12_final_results_consolidation.ipynb",
+  "generated_at_utc": "2026-07-30T09:33:48.795146+00:00",
+  "role": "Final dissertation evidence consolidation",
+  "training_performed": false,
+  "raw_test_labels_accessed": false,
+  "evidence_hierarchy": {
+    "primary": [
+      "NB10 repeated grouped validation",
+      "NB11 one-time official endpoint evaluation"
+    ],
+    "supporting": [
+      "NB06 historical seed-42 comparison",
+      "NB10 cycle_index ablation",
+      "NB10 per-engine analysis"
+    ],
+    "model_behaviour": [
+      "NB07 explainability",
+      "NB08 trustworthiness"
+    ]
+  },
+  "source_hashes": {
+    "historical_comparison": {
+      "relative_path": "reports/metrics/multiview_vs_baselines_comparison_fd001.csv",
+      "sha256": "054a8ec87c91e79640c2cd9ce05c1f3d54b381bbfa33689c27076f203ab17d35"
+    },
+    "repeated_split": {
+      "relative_path": "reports/final_validation/repeated_validation_split_metrics_fd001.csv",
+      "sha256": "4e306fce505abf7c2224620d5b92072761e41711ad0f0288e225cc86f6b09829"
+    },
+    "repeated_summary": {
+      "relative_path": "reports/final_validation/repeated_validation_summary_fd001.csv",
+      "sha256": "004940ef6d06fa7636bf36ca272a2ae2a8e56dc1ef97ce25ca5b6475110b82c1"
+    },
+    "pairwise_comparison": {
+      "relative_path": "reports/final_validation/repeated_validation_pairwise_comparison_fd001.csv",
+      "sha256": "dd053ae926d2ba7873faddb77ac4cd29c39766415d7c88f06caf2a51f04f4135"
+    },
+    "fusion_comparison": {
+      "relative_path": "reports/final_validation/repeated_validation_fusion_comparison_fd001.csv",
+      "sha256": "2b9e28204a41cc9087e2397b7e688afeb8c86df491aea6c020874dcdecabd952"
+    },
+    "per_engine": {
+      "relative_path": "reports/final_validation/per_engine_validation_metrics_fd001.csv",
+      "sha256": "738f5dc10fdf8dc8a862d2d7be8f60050ba7fbddc6857f8f8761bd76682f19aa"
+    },
+    "cycle_index_ablation": {
+      "relative_path": "reports/final_validation/cycle_index_ablation_fd001.csv",
+      "sha256": "c441ab95cc044cc5736e7309dd29f869bed40b511415f91dca3f8630667aadeb"
+    },
+    "nb10_config": {
+      "relative_path": "reports/final_validation/frozen_experiment_config.json",
+      "sha256": "59fd7c3c77c297368085fa8d6a070e56848e1c5f53adb3215f61e6352c7ff5fe"
+    },
+    "test_metrics": {
+      "relative_path": "reports/final_test/final_test_endpoint_metrics_fd001.csv",
+      "sha256": "9375d1f8d2b58430fff38a5149078499a78e6b4b052d7408862f09a210b1ffd8"
+    },
+    "test_predictions": {
+      "relative_path": "reports/final_test/final_test_endpoint_predictions_fd001.csv",
+      "sha256": "8f4c0dacb227c0846493c67a9b32073877897755c9644ac907ae70d2c4baaaef"
+    },
+    "epoch_selection": {
+      "relative_path": "reports/final_test/final_epoch_selection_fd001.csv",
+      "sha256": "4e7f9bbdaa05b5e6cd004253b0b698a4d7224cca480c1ac83b87e244dcdeac3c"
+    },
+    "test_protocol": {
+      "relative_path": "reports/final_test/frozen_official_test_protocol.json",
+      "sha256": "956c3085ebe8fe14ea6667b2f6a9ae79f930faa406e4d49d664bb7fc0e638ff3"
+    },
+    "pretest_manifest": {
+      "relative_path": "reports/final_test/pretest_freeze_manifest.json",
+      "sha256": "beeb7c421455ff0621a9b01a639d71f5b284354030038a832e6b92c1ec750a5c"
+    },
+    "test_manifest": {
+      "relative_path": "reports/final_test/official_test_evaluation_manifest.json",
+      "sha256": "4a7438c74dd46cf2b3e65773234d81e83752561827c6aa0ec254a5119db11b72"
+    },
+    "feature_importance": {
+      "relative_path": "reports/explainability/xgboost_feature_importance_fd001.csv",
+      "sha256": "05cc022e3d9821566777ac045c1c16460e17aad6efe75bdf0d418e04d29c4064"
+    },
+    "shap_ranking": {
+      "relative_path": "reports/explainability/xgboost_shap_feature_ranking_fd001.csv",
+      "sha256": "df30e962e9e6467fdee67a28c7c292c9fc622d04ec16aeec50329201dec1ed2b"
+    },
+    "view_masking": {
+      "relative_path": "reports/explainability/multiview_view_masking_explainability_fd001.csv",
+      "sha256": "1b6b28bf974e1269d952c4e671e53482e63745a6c04a3db6532a660b0eb87ae4"
+    },
+    "local_cases": {
+      "relative_path": "reports/explainability/local_prediction_cases_multiview_fd001.csv",
+      "sha256": "a61cb9b38aee2b9ccb871f33be429cfb8aa1aad31ebb3a5c8d06bc0b347e2113"
+    },
+    "robustness": {
+      "relative_path": "reports/robustness/robustness_summary_multiview_fd001.csv",
+      "sha256": "5c899530227dadcc8e53bb5fb1a3a7c3005db814864954a3157c30d933762250"
+    },
+    "rul_range": {
+      "relative_path": "reports/robustness/rul_range_error_analysis_multiview_fd001.csv",
+      "sha256": "25313d6bdc4e61419fed475213691c4dbe5429d87a0cfdccb6e33c61ebc62844"
+    },
+    "bias": {
+      "relative_path": "reports/robustness/prediction_bias_summary_multiview_fd001.csv",
+      "sha256": "7bcd2c84a1322fcb9a98f9a7ddc250109b29103685f24eac8b0cc0a6da43f337"
+    },
+    "noise_stability": {
+      "relative_path": "reports/robustness/repeated_noise_stability_summary_multiview_fd001.csv",
+      "sha256": "c9c7e24a273b0a82f88d41f56da7edf40d1b50e46372f663d6acf496c11f5a66"
+    },
+    "uncertainty": {
+      "relative_path": "reports/robustness/mc_dropout_uncertainty_summary_multiview_fd001.csv",
+      "sha256": "115a0d2c698ecba2872be7139045e15f492b681a207bb4cbcb5d9ed48776c996"
+    }
+  },
+  "output_hashes": {
+    "final_model_comparison": {
+      "relative_path": "reports/final_summary/final_model_comparison_fd001.csv",
+      "sha256": "333d0206c20379413f95d308e937dc387e37bcc8ec1dff2de554cf6595287a47"
+    },
+    "repeated_validation_report_table": {
+      "relative_path": "reports/final_summary/repeated_validation_report_table_fd001.csv",
+      "sha256": "a70caabee78e59d5c0b5e2330e881de38cac95d8032bd02e075e9266fed267a5"
+    },
+    "final_test_report_table": {
+      "relative_path": "reports/final_summary/final_test_report_table_fd001.csv",
+      "sha256": "97b8db476702ce7abc70d7057a7673cd619b0180ca7fc180ef464e1c6f83ada5"
+    },
+    "final_explainability_table": {
+      "relative_path": "reports/final_summary/final_explainability_table_fd001.csv",
+      "sha256": "2fd127706ae80e0f0c8b7329b732c7cc201d58f5d75b0c1ed875ad9371a915c8"
+    },
+    "final_trustworthiness_table": {
+      "relative_path": "reports/final_summary/final_trustworthiness_table_fd001.csv",
+      "sha256": "f3a1b43f556ac6e50445949b83464a710060ea2c305bfff277bc55cd49d63524"
+    },
+    "research_question_evidence": {
+      "relative_path": "reports/final_summary/research_question_evidence_fd001.csv",
+      "sha256": "7ccdc1cd3a6586dcf65b7df31f43a1a48d36da87fc443c95d4aad2cd70ec9e70"
+    },
+    "final_limitations": {
+      "relative_path": "reports/final_summary/final_limitations_fd001.csv",
+      "sha256": "f1f2ef1ce704630b8b2ff3fa9080b403b22bb2937ad2a81aac8c609808a149de"
+    },
+    "final_claims_and_qualifications": {
+      "relative_path": "reports/final_summary/final_claims_and_qualifications_fd001.csv",
+      "sha256": "8caf2e9919a6632289bf6e2cd8e7eff5400d384e4db5c2b8d51edf0b8a8f9aa3"
+    },
+    "final_report_asset_checklist": {
+      "relative_path": "reports/final_summary/final_report_asset_checklist_fd001.csv",
+      "sha256": "28869176429ab8de834f82eb460652563fb5266824e0408567bfd43b3ec71b01"
+    },
+    "experimental_protocol_summary": {
+      "relative_path": "reports/final_summary/experimental_protocol_summary_fd001.csv",
+      "sha256": "0a46cd2d953988928377783185b24dedfcd1fa04a630e03176f1e088b740c9b2"
+    },
+    "historical_seed42_reference": {
+      "relative_path": "reports/final_summary/seed42_historical_reference_fd001.csv",
+      "sha256": "24a0273beb073a4cb0d2860f7748d5091cc8d87e4bb513606fabaf6bd54c3673"
+    },
+    "repeated_validation_split_report": {
+      "relative_path": "reports/final_summary/repeated_validation_split_report_fd001.csv",
+      "sha256": "f701a88914714f9d98eb171bef265e61b6bb9a01be2ecc04a9e3cafc2c796f45"
+    },
+    "fusion_comparison_report": {
+      "relative_path": "reports/final_summary/fusion_comparison_report_fd001.csv",
+      "sha256": "2b9e28204a41cc9087e2397b7e688afeb8c86df491aea6c020874dcdecabd952"
+    },
+    "cycle_index_ablation_report": {
+      "relative_path": "reports/final_summary/cycle_index_ablation_report_fd001.csv",
+      "sha256": "f68f0438b00f430f486283a04faacf533d6357f48eeed8a60ee2eb65004ccb54"
+    },
+    "per_engine_report_table": {
+      "relative_path": "reports/final_summary/per_engine_report_table_fd001.csv",
+      "sha256": "b4f04d029adc96b0a70a0b3c6676777575642958c6820dd9b3ecedfc42e9a659"
+    },
+    "repeated_validation_mean_rmse_figure": {
+      "relative_path": "reports/final_summary/repeated_validation_mean_rmse_fd001.png",
+      "sha256": "1cad3c0ba2efec30e143d54c0c9dd54fc58b1b2dc0c32746960c1376cefdebd3"
+    },
+    "repeated_validation_split_rmse_figure": {
+      "relative_path": "reports/final_summary/repeated_validation_split_rmse_fd001.png",
+      "sha256": "0bea81cd4803585dc2d8de1648e4de09e49d70dbf691733b7ea81bf7688742fe"
+    },
+    "official_test_rmse_figure": {
+      "relative_path": "reports/final_summary/official_test_rmse_fd001.png",
+      "sha256": "bca1fb739d18fb2f9a16b0bf873625fbff25ca588ed88bc97cab6095afe0d738"
+    },
+    "validation_test_rank_figure": {
+      "relative_path": "reports/final_summary/validation_test_rank_comparison_fd001.png",
+      "sha256": "61f00027e435d09483a34be0991ddebc4bb70ee8fb7f23791db16785e2dd45c8"
+    },
+    "official_test_actual_vs_predicted_xgboost": {
+      "relative_path": "reports/final_summary/official_test_actual_vs_predicted_XGBoost_fd001.png",
+      "sha256": "79d1544e779a699cd869857c199164afb85fd4e0548577984b50036493a0680f"
+    },
+    "official_test_actual_vs_predicted_fusion": {
+      "relative_path": "reports/final_summary/official_test_actual_vs_predicted_MultiViewGRUFusion_fd001.png",
+      "sha256": "0ec004fea5efaa21a1d0310e31d2644f6029bee0d412018d917ae2e15f00276b"
+    }
+  },
+  "principal_findings": {
+    "primary_outcome": "Outcome C",
+    "secondary_observation": "Outcome D",
+    "validation_mean_rmse_winner": "DerivedOnlyMLP",
+    "official_test_rmse_winner": "XGBoost",
+    "fusion_consistently_superior": false,
+    "official_targets_above_cap_125": 11
+  }
+}

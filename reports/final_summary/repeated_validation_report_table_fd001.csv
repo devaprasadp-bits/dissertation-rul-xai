@@ -1,0 +1,5 @@
+validation_rank,model,rmse_mean_std,mae_mean_std,r2_mean_std,macro_engine_rmse_mean_std,mean_error_mean,best_epochs,interpretation
+1,DerivedOnlyMLP,14.2308 ± 0.9167,10.2354 ± 0.7426,0.8837 ± 0.0148,13.6963 ± 0.6667,-0.309,"[55.0, 60.0, 59.0]",Lowest mean validation RMSE and MAE across the three split configurations
+2,MultiViewGRUFusion,14.2787 ± 1.6112,10.7053 ± 1.5085,0.8822 ± 0.0259,13.6978 ± 1.2719,-3.5229,"[12.0, 9.0, 12.0]","Competitive mean RMSE, but higher variability and no consistent split-level superiority"
+3,XGBoost,14.4297 ± 2.0723,10.4897 ± 1.5172,0.8791 ± 0.0344,13.7249 ± 1.6475,-1.7722,[],Comparator model in the repeated-validation analysis
+4,GRU,14.4671 ± 0.4212,11.2108 ± 0.2941,0.8800 ± 0.0069,14.2817 ± 0.3716,-1.9374,"[12.0, 12.0, 26.0]",Comparator model in the repeated-validation analysis

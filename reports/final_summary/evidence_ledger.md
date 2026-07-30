@@ -4,7 +4,7 @@
 
 **Rule:** Every headline number and figure in the final report must map to a saved output artefact via an entry in this ledger.
 
-**Status values:** `Verified` = artefact exists and value confirmed | `Pending` = planned evidence whose source notebook or artefact has not yet been completed and verified. | `Check` = artefact exists but path/value needs confirmation before writing to report
+**Status values:** `Verified` = artefact exists and value confirmed | `Pending` = planned evidence whose source notebook or artefact has not yet been completed and verified | `Check` = artefact exists but path/value needs confirmation before writing to report
 
 ---
 
@@ -28,9 +28,9 @@
 | E07a | Fusion percentage comparisons and win counts | NB10 | `reports/final_validation/repeated_validation_fusion_comparison_fd001.csv` | §6.2, Table F5 | Verified |
 | E08 | Per-engine validation metrics | NB10 | `reports/final_validation/per_engine_validation_metrics_fd001.csv` | §6.3, Table F7 | Verified |
 | E09 | cycle_index ablation table | NB10 | `reports/final_validation/cycle_index_ablation_fd001.csv` | §6.4, Table F6 | Verified |
-| E10 | Official test endpoint metrics (all models) | NB11 | `reports/final_test/final_test_endpoint_metrics_fd001.csv` | §6.5, Table F8 | **PENDING** |
-| E11 | Official test endpoint predictions | NB11 | `reports/final_test/final_test_endpoint_predictions_fd001.csv` | §6.5 | **PENDING** |
-| E12 | Final epoch selection table | NB11 | `reports/final_test/final_epoch_selection_fd001.csv` | §5.7 | **PENDING** |
+| E10 | Official test endpoint metrics (all models) | NB11 | `reports/final_test/final_test_endpoint_metrics_fd001.csv` | §6.5, Table F8 | Verified |
+| E11 | Official test endpoint predictions | NB11 | `reports/final_test/final_test_endpoint_predictions_fd001.csv` | §6.5 | Verified |
+| E12 | Final epoch selection table | NB11 | `reports/final_test/final_epoch_selection_fd001.csv` | §5.7 | Verified |
 
 ---
 
@@ -126,11 +126,11 @@
 |---|---|---|---|---|
 | NB01–09 (mid-semester) | 43 | 0 | 0 | 43 |
 | NB10 (repeated validation) | 7 | 0 | 0 | 7 |
-| NB11 (test evaluation) | 0 | 3 | 0 | 3 |
+| NB11 (test evaluation) | 3 | 0 | 0 | 3 |
 | NB12 (consolidation) | 0 | 4 | 0 | 4 |
-| **Total** | **50** | **7** | **0** | **57** |
+| **Total** | **53** | **4** | **0** | **57** |
 
-**7 evidence items pending** — all from NB11 and NB12. All NB10 evidence verified.
+**4 evidence items pending** — all from NB12. All NB10 and NB11 evidence verified.
 
 ---
 
@@ -153,4 +153,4 @@
 
 ---
 
-*Ledger created: 2026-07-26 | NB10 verified: 2026-07-28 | Update after each notebook completes*
+*Ledger created: 2026-07-26 | NB10 verified: 2026-07-28 | NB11 verified: 2026-07-30 | Update after each notebook completes*

@@ -1,0 +1,25 @@
+{
+  "evaluated_at": "2026-07-30T07:49:26.479347+00:00",
+  "authorised": true,
+  "one_time_official_test_protocol": true,
+  "test_engines": 100,
+  "predictions_per_model": 100,
+  "target": "official endpoint RUL capped at 125",
+  "no_post_test_tuning_permitted": true,
+  "final_epochs": {
+    "GRU": 12,
+    "DerivedOnlyMLP": 59,
+    "MultiViewGRUFusion": 12
+  },
+  "pretest_freeze_manifest_sha256": "beeb7c421455ff0621a9b01a639d71f5b284354030038a832e6b92c1ec750a5c",
+  "raw_test_sha256": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+  "official_rul_sha256": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca",
+  "predictions_sha256": "8f4c0dacb227c0846493c67a9b32073877897755c9644ac907ae70d2c4baaaef",
+  "metrics_sha256": "9375d1f8d2b58430fff38a5149078499a78e6b4b052d7408862f09a210b1ffd8",
+  "model_hashes": {
+    "XGBoost": "f358e22c0ef420ec42a139f9373cb86f9712b0be8eab473965ba35f7145ada27",
+    "GRU": "8796cd487c7c13e33bf396ab93708bd7f3c8f18252ba97486adb95c25f921188",
+    "DerivedOnlyMLP": "9aa99b17ab08fec49f34562e874d7f6c54092efa39c886f759741a8caa14cf5c",
+    "MultiViewGRUFusion": "3c66b84a13e2b87d95c12ba54e16c3f9739bea00150163454b8de121ae50029b"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-07-30T07:46:10.328640+00:00",
+  "status": "models and preprocessing frozen before official test-label access",
+  "train_engines": 100,
+  "training_rows_xgboost": 20631,
+  "training_windows_neural": 17731,
+  "final_epochs": {
+    "GRU": 12,
+    "DerivedOnlyMLP": 59,
+    "MultiViewGRUFusion": 12
+  },
+  "files": {
+    "model_XGBoost": {
+      "path": "models/final/XGBoost_feature_set_c_fd001.joblib",
+      "sha256": "f358e22c0ef420ec42a139f9373cb86f9712b0be8eab473965ba35f7145ada27",
+      "size_bytes": 526766
+    },
+    "model_GRU": {
+      "path": "models/final/GRU_B_window30_fd001.keras",
+      "sha256": "8796cd487c7c13e33bf396ab93708bd7f3c8f18252ba97486adb95c25f921188",
+      "size_bytes": 357348
+    },
+    "model_DerivedOnlyMLP": {
+      "path": "models/final/DerivedOnlyMLP_window30_fd001.keras",
+      "sha256": "9aa99b17ab08fec49f34562e874d7f6c54092efa39c886f759741a8caa14cf5c",
+      "size_bytes": 89456
+    },
+    "model_MultiViewGRUFusion": {
+      "path": "models/final/MultiViewGRUFusion_window30_fd001.keras",
+      "sha256": "3c66b84a13e2b87d95c12ba54e16c3f9739bea00150163454b8de121ae50029b",
+      "size_bytes": 402396
+    },
+    "history_GRU": {
+      "path": "reports/final_test/full_training_history_GRU_fd001.csv",
+      "sha256": "20d2e1465bb717ffc7dafa9edd8da09a3d071637c1bc018f9797f1d6328bbefc",
+      "size_bytes": 446
+    },
+    "history_DerivedOnlyMLP": {
+      "path": "reports/final_test/full_training_history_DerivedOnlyMLP_fd001.csv",
+      "sha256": "5e5fb43cc38f79b177e28bf1b62bbccc5c19892f10ff3d3dca5f6b3b6f5895d4",
+      "size_bytes": 2196
+    },
+    "history_MultiViewGRUFusion": {
+      "path": "reports/final_test/full_training_history_MultiViewGRUFusion_fd001.csv",
+      "sha256": "1ec58ea135d0721f11283a081eb207d6f32bb80cf1182337504af2e573f3c563",
+      "size_bytes": 453
+    },
+    "scaler_feature_set_b": {
+      "path": "data/processed/final_full_training/scaler_feature_set_b_fd001.joblib",
+      "sha256": "85fbcd94590f61667b4404e6390bcb9827ddafe32ded723b833f85c4793081a8",
+      "size_bytes": 1527
+    },
+    "scaler_feature_set_c": {
+      "path": "data/processed/final_full_training/scaler_feature_set_c_fd001.joblib",
+      "sha256": "e20b42e19586195c3ecaace22e7aa6b3c1f9accc1afaf034c31aeacad4a1903d",
+      "size_bytes": 3791
+    },
+    "feature_manifest": {
+      "path": "data/processed/final_full_training/feature_manifest_fd001.json",
+      "sha256": "3cc0fa96d5b597af0c72224d7693b6e99d995c82a22fb2ab7c750bb300edf0f0",
+      "size_bytes": 3916
+    },
+    "epoch_selection": {
+      "path": "reports/final_test/final_epoch_selection_fd001.csv",
+      "sha256": "4e7f9bbdaa05b5e6cd004253b0b698a4d7224cca480c1ac83b87e244dcdeac3c",
+      "size_bytes": 352
+    },
+    "frozen_protocol": {
+      "path": "reports/final_test/frozen_official_test_protocol.json",
+      "sha256": "956c3085ebe8fe14ea6667b2f6a9ae79f930faa406e4d49d664bb7fc0e638ff3",
+      "size_bytes": 1052
+    }
+  }
+}

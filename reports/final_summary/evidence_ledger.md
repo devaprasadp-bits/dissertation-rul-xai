@@ -147,9 +147,9 @@
 - [x] E10 — Official test endpoint metrics (NB11)
 - [x] E11 — Official test predictions (NB11)
 - [x] E12 — Final epoch selection (NB11)
-- [ ] E53 — Final model comparison (NB12)
-- [ ] E54 — Research question evidence (NB12)
-- [ ] E55–E56 — Limitations and claims tables (NB12)
+- [x] E53 — Final model comparison (NB12)
+- [x] E54 — Research question evidence (NB12)
+- [x] E55–E56 — Limitations and claims tables (NB12)
 
 ---
 

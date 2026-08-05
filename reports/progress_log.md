@@ -239,3 +239,114 @@ Key outputs:
 - 6 limitations documented with mitigations, including FD001-only scope, benchmark-driven multi-view formulation, and uncalibrated MC Dropout.
 - All dissertation title components mapped to generated evidence.
 - Mid-sem report asset checklist: all 11 items ready.
+
+---
+
+## Step 10 Completed: Repeated Validation Across Engine Cohorts
+
+Retrained the four principal models (XGBoost, GRU, DerivedOnlyMLP, MultiViewGRUFusion) across three engine-level validation splits (seeds 21, 42, 84) with a fixed model seed of 42. Each split used 80 training engines and 20 validation engines. Neural-model epoch counts were not fixed in advance; each run used early stopping. The median best epoch across the three splits was computed per model and saved as the frozen epoch count for Stage 3.
+
+**Repeated validation results (window-aligned, per split):**
+
+| Split seed | Lowest-RMSE model | RMSE |
+|---|---|---:|
+| 21 | DerivedOnlyMLP | 14.02 |
+| 42 | XGBoost | 12.53 |
+| 84 | GRU | 14.87 |
+
+No model ranked first across all three splits.
+
+**Mean RMSE summary across three splits:**
+
+| Model | Mean RMSE | SD RMSE |
+|---|---:|---:|
+| DerivedOnlyMLP | 14.2308 | 0.92 |
+| MultiViewGRUFusion | 14.2787 | 1.61 |
+| XGBoost | 14.4297 | 2.07 |
+| GRU | 14.4671 | 0.42 |
+
+**Frozen epoch counts selected (median across splits):** GRU = 12, DerivedOnlyMLP = 59, MultiViewGRUFusion = 12. XGBoost has no epoch parameter.
+
+**cycle_index ablation (seed-42 split):** Removing cycle_index increased RMSE by 16.3% for DerivedOnlyMLP, 15.0% for MultiViewGRUFusion, and 11.4% for XGBoost.
+
+A seed-42 reproduction gate confirmed that the seed-42 split results matched the historical development run within tolerance before the repeated-validation protocol proceeded.
+
+Key artefacts:
+- 10_repeated_validation_final_protocol.ipynb
+- repeated_validation_split_metrics_fd001.csv, repeated_validation_summary_fd001.csv
+- repeated_validation_pairwise_comparison_fd001.csv, repeated_validation_fusion_comparison_fd001.csv
+- cycle_index_ablation_fd001.csv, per_engine_validation_metrics_fd001.csv
+- frozen_experiment_config.json, seed42_reproduction_manifest.json
+- Training history CSVs per split (split_seed_21/, split_seed_42/, split_seed_84/)
+- Figures: repeated_validation_split_rmse_fd001.png, repeated_validation_mean_rmse_fd001.png
+
+Key findings:
+- Model rankings are sensitive to engine-cohort composition; no single model ranked first in all three splits.
+- DerivedOnlyMLP had the lowest mean RMSE; GRU had the lowest spread (SD 0.42).
+- Fusion ranked second by mean RMSE but had the highest spread after XGBoost.
+- cycle_index is a material predictor in all models that use the derived view.
+- Three splits provide descriptive cohort-sensitivity evidence but are insufficient for formal statistical inference.
+
+---
+
+## Step 11 Completed: Official Endpoint Evaluation
+
+Refitted all four principal models using all 100 FD001 training engines and the frozen epoch counts from Step 10 (GRU = 12, DerivedOnlyMLP = 59, MultiViewGRUFusion = 12). XGBoost was retrained with the frozen configuration (n_estimators = 300, max_depth = 4, learning_rate = 0.05). Preprocessing scalers were fitted on all 100 training engines. The pre-test freeze manifest (SHA-256 hashes of models and scalers) was recorded before any test predictions were made. The official endpoint test was run once; no re-evaluation was permitted after viewing the results.
+
+**Official endpoint test results (100 test engines, one prediction per engine):**
+
+| Rank | Model | RMSE | MAE | R² | Mean error |
+|---|---|---:|---:|---:|---:|
+| 1 | XGBoost | 12.2459 | 9.0155 | 0.9066 | +0.50 |
+| 2 | DerivedOnlyMLP | 12.8295 | 9.5588 | 0.8975 | −0.55 |
+| 3 | GRU | 13.2860 | 9.9167 | 0.8901 | +0.76 |
+| 4 | MultiViewGRUFusion | 13.3782 | 9.9372 | 0.8885 | −3.20 |
+
+XGBoost ranked first on the official test despite ranking third by mean RMSE in repeated validation. MultiViewGRUFusion, which ranked first in the historical seed-42 development comparison, ranked fourth. The fusion model also showed the largest under-prediction bias (mean error −3.20 cycles).
+
+Key artefacts:
+- 11_official_endpoint_evaluation.ipynb
+- final_test_endpoint_metrics_fd001.csv, final_test_endpoint_predictions_fd001.csv
+- final_epoch_selection_fd001.csv
+- pretest_freeze_manifest.json, frozen_official_test_protocol.json, official_test_evaluation_manifest.json
+- Full training history CSVs for GRU, DerivedOnlyMLP, MultiViewGRUFusion
+- Figures: official_test_rmse_fd001.png, official_test_actual_vs_predicted_XGBoost_fd001.png, official_test_actual_vs_predicted_MultiViewGRUFusion_fd001.png
+
+Key findings:
+- XGBoost achieved the strongest official endpoint result (RMSE 12.25, R² 0.91).
+- MultiViewGRUFusion was not consistently superior; it ranked fourth on the official test.
+- The ranking across the three evaluation layers (development, repeated validation, official test) was different for all four models, confirming that a single development split is insufficient for model selection.
+- The pre-test freeze manifest ensures no post-test adjustments affected the reported results.
+
+---
+
+## Step 12 Completed: Final Consolidation and Report Asset Assembly
+
+Consolidated all experimental results from Steps 1–11 into report-ready summary tables and figures. No new modelling experiments were introduced. The step assembled the cross-layer ranking comparison, final model comparison, research-question evidence mapping, limitations table, claims and qualifications, explainability summary, trustworthiness summary, and the final report asset checklist. The evidence ledger was completed with all 57 items verified.
+
+**Cross-layer ranking summary:**
+
+| Model | Stage 1 rank | Stage 2 rank (mean) | Stage 3 rank |
+|---|---:|---:|---:|
+| MultiViewGRUFusion | 1 | 2 | 4 |
+| XGBoost | 2 | 3 | 1 |
+| DerivedOnlyMLP | 3 | 1 | 2 |
+| GRU | 4 | 4 | 3 |
+
+Key artefacts:
+- 12_final_consolidation_and_report_assets.ipynb
+- final_model_comparison_fd001.csv, research_question_evidence_fd001.csv
+- final_limitations_fd001.csv, final_claims_and_qualifications_fd001.csv
+- final_explainability_table_fd001.csv, final_trustworthiness_table_fd001.csv
+- cycle_index_ablation_report_fd001.csv, fusion_comparison_report_fd001.csv
+- repeated_validation_report_table_fd001.csv, repeated_validation_split_report_fd001.csv
+- final_test_report_table_fd001.csv, per_engine_report_table_fd001.csv
+- seed42_historical_reference_fd001.csv, experimental_protocol_summary_fd001.csv
+- final_report_asset_checklist_fd001.csv, final_summary_manifest.json
+- Figures: validation_test_rank_comparison_fd001.png, repeated_validation_split_rmse_fd001.png, repeated_validation_mean_rmse_fd001.png
+
+Key findings:
+- All 57 evidence items verified across Sections 1–7 of the evidence ledger.
+- No model ranked consistently first across all three evaluation layers.
+- The central finding is that engineered degradation features provide a strong and comparatively consistent representation; fusion was competitive but not consistently superior.
+- Final report asset checklist confirmed all figures, tables, and supporting CSVs are present on disk.

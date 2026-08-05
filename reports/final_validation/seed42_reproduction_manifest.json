@@ -1,0 +1,204 @@
+{
+  "gate_run_at": "2026-07-27T15:01:34.440872+00:00",
+  "reference_split_seed": 42,
+  "model_seed": 42,
+  "metric_tolerance": 0.005,
+  "all_pass": true,
+  "passed_with_warnings": false,
+  "train_assignment_match": true,
+  "val_assignment_match": true,
+  "val_arrays_all_close": true,
+  "train_arrays_all_close": true,
+  "val_metadata_exact": true,
+  "train_metadata_exact": true,
+  "recalculated_metrics": {
+    "MultiViewGRUFusion": {
+      "rmse": 12.06573608307082,
+      "mae": 8.940562383185124,
+      "r2": 0.9168226847144066
+    },
+    "GRU": {
+      "rmse": 13.160494008023386,
+      "mae": 9.718194646647804,
+      "r2": 0.9010441123619181
+    },
+    "DerivedOnlyMLP": {
+      "rmse": 13.14511307018478,
+      "mae": 9.42043951301536,
+      "r2": 0.9012752807267677
+    },
+    "XGBoost": {
+      "rmse": 12.489413005805341,
+      "mae": 9.267511047930476,
+      "r2": 0.910878741665779
+    }
+  },
+  "reference_metrics": {
+    "MultiViewGRUFusion": {
+      "rmse": 12.0657,
+      "mae": 8.9406,
+      "r2": 0.9168
+    },
+    "XGBoost": {
+      "rmse": 12.4894,
+      "mae": 9.2675,
+      "r2": 0.9109
+    },
+    "DerivedOnlyMLP": {
+      "rmse": 13.1451,
+      "mae": 9.4204,
+      "r2": 0.9013
+    },
+    "GRU": {
+      "rmse": 13.1605,
+      "mae": 9.7182,
+      "r2": 0.901
+    }
+  },
+  "n_train_windows": 14020,
+  "n_val_windows": 3711,
+  "n_train_engines": 80,
+  "n_val_engines": 20,
+  "derived_col_count": 43,
+  "sensor_col_count": 14,
+  "gate_checks": [
+    {
+      "Check": "Training engines",
+      "Expected": 80,
+      "Reproduced": 80,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Validation engines",
+      "Expected": 20,
+      "Reproduced": 20,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Training windows",
+      "Expected": 14020,
+      "Reproduced": 14020,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Validation windows",
+      "Expected": 3711,
+      "Reproduced": 3711,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Seq shape (per sample)",
+      "Expected": "(30, 14)",
+      "Reproduced": "(30, 14)",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Derived feature count",
+      "Expected": 43,
+      "Reproduced": 43,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Engine assignment",
+      "Expected": "match",
+      "Reproduced": "match",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Val arrays numerical match",
+      "Expected": "allclose",
+      "Reproduced": "allclose",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Train arrays numerical match",
+      "Expected": "allclose",
+      "Reproduced": "allclose",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Val metadata and order",
+      "Expected": "exact match",
+      "Reproduced": "exact match",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Train metadata and order",
+      "Expected": "exact match",
+      "Reproduced": "exact match",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Fusion RMSE",
+      "Expected": 12.0657,
+      "Reproduced": 12.0657,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Fusion MAE",
+      "Expected": 8.9406,
+      "Reproduced": 8.9406,
+      "Status": "PASS"
+    },
+    {
+      "Check": "Fusion R\u00b2",
+      "Expected": 0.9168,
+      "Reproduced": 0.9168,
+      "Status": "PASS"
+    },
+    {
+      "Check": "XGBoost aligned RMSE",
+      "Expected": 12.4894,
+      "Reproduced": 12.4894,
+      "Status": "PASS"
+    },
+    {
+      "Check": "XGBoost aligned MAE",
+      "Expected": 9.2675,
+      "Reproduced": 9.2675,
+      "Status": "PASS"
+    },
+    {
+      "Check": "XGBoost aligned R\u00b2",
+      "Expected": 0.9109,
+      "Reproduced": 0.9109,
+      "Status": "PASS"
+    },
+    {
+      "Check": "DerivedOnlyMLP RMSE",
+      "Expected": 13.1451,
+      "Reproduced": 13.1451,
+      "Status": "PASS"
+    },
+    {
+      "Check": "DerivedOnlyMLP MAE",
+      "Expected": 9.4204,
+      "Reproduced": 9.4204,
+      "Status": "PASS"
+    },
+    {
+      "Check": "DerivedOnlyMLP R\u00b2",
+      "Expected": 0.9013,
+      "Reproduced": 0.9013,
+      "Status": "PASS"
+    },
+    {
+      "Check": "GRU RMSE",
+      "Expected": 13.1605,
+      "Reproduced": 13.1605,
+      "Status": "PASS"
+    },
+    {
+      "Check": "GRU MAE",
+      "Expected": 9.7182,
+      "Reproduced": 9.7182,
+      "Status": "PASS"
+    },
+    {
+      "Check": "GRU R\u00b2",
+      "Expected": 0.901,
+      "Reproduced": 0.901,
+      "Status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "MODEL_SEED": 42,
+  "RUL_CAP": 125,
+  "WINDOW_SIZE": 30,
+  "ROLLING_WIN": 5,
+  "STRIDE": 1,
+  "SPLIT_SEEDS_FOR_EPOCH_SELECTION": [
+    21,
+    42,
+    84
+  ],
+  "SENSOR_COLS": [
+    "sensor_measurement_11",
+    "sensor_measurement_4",
+    "sensor_measurement_12",
+    "sensor_measurement_7",
+    "sensor_measurement_15",
+    "sensor_measurement_21",
+    "sensor_measurement_20",
+    "sensor_measurement_2",
+    "sensor_measurement_17",
+    "sensor_measurement_3",
+    "sensor_measurement_8",
+    "sensor_measurement_13",
+    "sensor_measurement_9",
+    "sensor_measurement_14"
+  ],
+  "prediction_clipping": [
+    0,
+    125
+  ],
+  "XGB_PARAMS": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "reg:squarederror",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "GRU_BATCH": 256,
+  "MLP_BATCH": 128,
+  "GRU_LR": 0.001,
+  "MLP_LR": 0.001,
+  "official_test_unit_of_evaluation": "one endpoint prediction per engine",
+  "official_test_expected_engines": 100
+}

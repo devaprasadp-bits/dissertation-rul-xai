@@ -1,0 +1,27 @@
+asset_id,asset_type,description,relative_path,recommended_placement,status
+F1,Table,Experimental protocol summary,reports/final_summary/experimental_protocol_summary_fd001.csv,Main report,Ready
+F2,Table,Historical seed-42 window-aligned reference,reports/final_summary/seed42_historical_reference_fd001.csv,Main report with one-split qualification,Ready
+F3,Table,Repeated-validation split results,reports/final_summary/repeated_validation_split_report_fd001.csv,Main report,Ready
+F4,Table,Repeated-validation mean ± SD,reports/final_summary/repeated_validation_report_table_fd001.csv,Main report,Ready
+F5,Table,Fusion comparison and win counts,reports/final_summary/fusion_comparison_report_fd001.csv,Main report or appendix depending on space,Ready
+F6,Table,cycle_index ablation,reports/final_summary/cycle_index_ablation_report_fd001.csv,Main report,Ready
+F7,Table,Per-engine performance summary,reports/final_summary/per_engine_report_table_fd001.csv,Main report or appendix,Ready
+F8,Table,Official endpoint test results,reports/final_summary/final_test_report_table_fd001.csv,Main report,Ready
+F9,Table,Explainability findings,reports/final_summary/final_explainability_table_fd001.csv,Main report,Ready
+F10,Table,Trustworthiness findings,reports/final_summary/final_trustworthiness_table_fd001.csv,Main report,Ready
+F11,Table,Research-question evidence,reports/final_summary/research_question_evidence_fd001.csv,Discussion chapter,Ready
+F12,Table,Limitations and mitigations,reports/final_summary/final_limitations_fd001.csv,Conclusion chapter,Ready
+E53,Table,Final validation-test model comparison,reports/final_summary/final_model_comparison_fd001.csv,Main report,Ready
+E56,Table,Claims and qualifications,reports/final_summary/final_claims_and_qualifications_fd001.csv,Writing control / appendix,Ready
+Fig-Final-1,Figure,Repeated-validation mean RMSE,reports/final_summary/repeated_validation_mean_rmse_fd001.png,Main report,Ready
+Fig-Final-2,Figure,Split-level RMSE by engine cohort,reports/final_summary/repeated_validation_split_rmse_fd001.png,Main report,Ready
+Fig-Final-3,Figure,Official endpoint RMSE comparison,reports/final_summary/official_test_rmse_fd001.png,Main report,Ready
+Fig-Final-4,Figure,Validation-versus-test rank comparison,reports/final_summary/validation_test_rank_comparison_fd001.png,Discussion chapter,Ready
+Fig-Final-5,Figure,Official actual vs predicted — XGBoost,reports/final_summary/official_test_actual_vs_predicted_XGBoost_fd001.png,Main report,Ready
+Fig-Final-6,Figure,Official actual vs predicted — Fusion,reports/final_summary/official_test_actual_vs_predicted_MultiViewGRUFusion_fd001.png,Appendix or discussion,Ready
+Fig-EDA,Figure,RUL distribution and cap context,reports/figures/rul_capping_comparison_fd001.png,Main report,Ready
+Fig-SHAP,Figure,SHAP summary for XGBoost,reports/figures/shap_summary_xgboost_fd001.png,Main report,Ready
+Fig-View,Figure,View-masking sensitivity,reports/figures/multiview_view_masking_rmse_fd001.png,Main report,Ready
+Fig-Robust,Figure,Robustness comparison,reports/figures/robustness_summary_rmse_multiview_fd001.png,Main report,Ready
+Fig-RUL-Region,Figure,RUL range-wise error,reports/figures/rul_range_error_multiview_fd001.png,Main report or appendix,Ready
+Fig-Uncertainty,Figure,Uncertainty versus error,reports/figures/uncertainty_vs_error_multiview_fd001.png,Appendix,Ready

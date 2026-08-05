@@ -1,0 +1,4 @@
+split_seed,fusion_rmse,XGBoost_rmse,fusion_vs_XGBoost_pct,GRU_rmse,fusion_vs_GRU_pct,DerivedOnlyMLP_rmse,fusion_vs_DerivedOnlyMLP_pct,fusion_wins_vs_XGBoost,fusion_wins_vs_GRU,fusion_wins_vs_DerivedOnlyMLP
+21,14.5132,14.1129,-2.84,14.5044,-0.06,14.0158,-3.55,1,1,1
+42,12.5632,12.5341,-0.23,14.0285,10.45,13.4408,6.53,1,1,1
+84,15.7599,16.6421,5.3,14.8684,-6.0,15.2359,-3.44,1,1,1

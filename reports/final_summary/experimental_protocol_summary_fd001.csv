@@ -1,0 +1,17 @@
+protocol_item,frozen_value,qualification
+Dataset,NASA C-MAPSS FD001,100 train engines and 100 official test engines; one operating condition and one fault mode
+Prediction task,Regression,Remaining Useful Life in cycles
+Target formulation,Capped RUL,RUL capped at 125 cycles
+Sequence window,30 cycles,One 30-cycle sensor window per training sample
+Raw sequence view,30 × 14,Fourteen variable sensor measurements
+Derived view,43 features,"14 rolling means, 14 rolling standard deviations, 14 deltas and cycle_index"
+Rolling window,5 cycles,Computed within engine using current and preceding cycles only
+Validation grouping,Engine-level,No engine overlap between training and validation
+Repeated-validation split seeds,"21, 42, 84",Model seed fixed at 42
+Repeated-validation unit,Eligible windows,Metrics are window-weighted; macro-engine RMSE is also reported
+Final training,All 100 training engines,No validation set and no early stopping during final refit
+Neural final epochs,GRU 12; DerivedOnlyMLP 59; Fusion 12,Median best epoch across the three final-protocol validation splits
+Official test unit,One endpoint per engine,Exactly 100 endpoint predictions per model
+Official test target,Official endpoint RUL capped at 125,"Predictions clipped to [0, 125]"
+Test-use rule,Evaluated once,No tuning after viewing official test outcomes
+Principal metrics,"RMSE, MAE and R²",Mean error and supporting error statistics also reported

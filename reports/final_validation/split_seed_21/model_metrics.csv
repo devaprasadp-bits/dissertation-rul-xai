@@ -1,0 +1,5 @@
+split_seed,model_seed,model,validation_rmse,validation_mae,validation_r2,macro_engine_rmse,best_epoch,mean_error
+21,42,XGBoost,14.11288,9.948947,0.884964,13.457154,,0.158539
+21,42,GRU,14.504371,11.142962,0.878493,14.359249,12.0,-1.350133
+21,42,DerivedOnlyMLP,14.015839,9.977811,0.886541,13.510664,55.0,0.546526
+21,42,MultiViewGRUFusion,14.513174,10.78743,0.878346,14.000737,12.0,-3.561232

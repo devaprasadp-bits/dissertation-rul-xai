@@ -1,0 +1,4 @@
+model,seed_21_best_epoch,seed_42_best_epoch,seed_84_best_epoch,configured_max_epoch,selection_rule,final_epoch
+GRU,12,12,26,30,"median best epoch across split seeds 21, 42 and 84",12
+DerivedOnlyMLP,55,60,59,60,"median best epoch across split seeds 21, 42 and 84",59
+MultiViewGRUFusion,12,9,12,60,"median best epoch across split seeds 21, 42 and 84",12
